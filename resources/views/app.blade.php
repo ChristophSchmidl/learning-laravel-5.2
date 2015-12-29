@@ -9,19 +9,22 @@
 
 </head>
 <body>
-    <div class="container">
-        @if (Session::has('flash_message'))
-            <div class="alert alert-success">{{ Session::get('flash_message') }}
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            </div>
-        @endif
 
-        @yield('content')
-    </div>
+@include ('articles._nav')
 
-    {{ Html::script('js/vendor.js') }}
-    {{ Html::script('js/app.js') }}
+<div class="container">
+    @if (Session::has('flash_message'))
+        <div class="alert alert-success">{{ Session::get('flash_message') }}
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        </div>
+    @endif
 
-    @yield('footer')
+    @yield('content')
+</div>
+
+{{ Html::script('js/vendor.js') }}
+{{ Html::script('js/app.js') }}
+
+@yield('footer')
 </body>
 </html>
