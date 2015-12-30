@@ -43,5 +43,7 @@
             'placeholder': 'Choose a tag',
             'tags': true
         });
+
+        $('#myDatepicker').datepicker('setDate','{!! $article->published_at !!}');
     </script>
 @endsection

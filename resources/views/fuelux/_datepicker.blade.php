@@ -1,6 +1,6 @@
 <div class="datepicker fuelux" id="{{ $datepickerId }}">
     <div class="input-group">
-        <input class="form-control" id="{{ $datepickerInputId }}" type="text" name="{{ $name }}" />
+        <input class="form-control" id="{{ $datepickerInputId }}" type="text" name="{{ $name }}"/>
         <div class="input-group-btn">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 <span class="glyphicon glyphicon-calendar"></span>

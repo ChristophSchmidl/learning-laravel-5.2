@@ -37,4 +37,6 @@ Route::group(['middleware' => ['web']], function () {
     {
         return 'this page may only be viewed by managers';
     }]);
+
+    Route::get('tags/{tags}', 'TagsController@show');
 });
